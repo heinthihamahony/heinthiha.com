@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Codeicon } from "./codeicon";
 import { NextIcon } from "./nexticon";
 import { TailwildIcon } from "./tailwildicon";
-import { TypescriptIcon } from "./TsIcon";
+import { TypescriptIcon } from "./typescripticon";
 
 export const HoverEffect = ({
   items,
