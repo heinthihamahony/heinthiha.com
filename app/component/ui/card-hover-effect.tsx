@@ -2,11 +2,8 @@ import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
-import { NextIcon } from "./nexticon";
+
 import { Codeicon } from "./codeicon";
-import { TailwildIcon } from "./tailwildicon";
-import { TsIcon } from "./TsIcon";
-import { ReactIcon } from "./reacticon";
 
 export const HoverEffect = ({
   items,
