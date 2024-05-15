@@ -5,12 +5,11 @@ import { useState } from "react";
 import { Icon } from "./icon";
 import { Codeicon } from "./codeicon";
 
-export const HoverEffect = ({
+export const OpenSource = ({
   items,
   className,
 }: {
   items: {
-    image: string;
     title: string;
     description: string;
     link: string;
@@ -51,20 +50,10 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <Card>
-            <div className=" ">
-              <div className=" ">
-                <img src={item.image} alt="" />
-                <p className="text-white font-semibold py-8">{item.title}</p>
-                <p className="text-[#a1a1aa] pb-8">{item.description}</p>
-                <Icon />
-                <div className=" flex gap-3 items-center pb-4">
-                  <Codeicon />
-                  <p className=" text-[#6b7280] text-xs group-hover:text-cyan-500">
-                    View Source
-                  </p>
-                </div>
-              </div>
+          <Card className=" flex-grow">
+            <div className="flex-grow">
+              <p className="text-white font-semibold ">{item.title}</p>
+              <p className="text-[#a1a1aa] mt-4">{item.description}</p>
             </div>
           </Card>
         </Link>
