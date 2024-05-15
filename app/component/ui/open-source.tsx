@@ -2,7 +2,7 @@ import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
-import { Icon } from "./icon";
+
 import { Codeicon } from "./codeicon";
 
 export const OpenSource = ({

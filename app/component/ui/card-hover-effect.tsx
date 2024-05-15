@@ -2,8 +2,11 @@ import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
-import { Icon } from "./icon";
+import { NextIcon } from "./nexticon";
 import { Codeicon } from "./codeicon";
+import { TailwildIcon } from "./tailwildicon";
+import { TsIcon } from "./TsIcon";
+import { ReactIcon } from "./reacticon";
 
 export const HoverEffect = ({
   items,
@@ -57,7 +60,13 @@ export const HoverEffect = ({
                 <img src={item.image} alt="" />
                 <p className="text-white font-semibold py-8">{item.title}</p>
                 <p className="text-[#a1a1aa] pb-8">{item.description}</p>
-                <Icon />
+                {/* <div className=" flex gap-5 pb-8">
+                  <NextIcon />
+                  <TailwildIcon />
+                  <TsIcon />
+                  <ReactIcon />
+                </div> */}
+
                 <div className=" flex gap-3 items-center pb-4">
                   <Codeicon />
                   <p className=" text-[#6b7280] text-xs group-hover:text-cyan-500">
