@@ -7,6 +7,7 @@ import { Codeicon } from "./codeicon";
 import { NextIcon } from "./nexticon";
 import { TailwildIcon } from "./tailwildicon";
 import { TypescriptIcon } from "./typescripticon";
+import { ReactIcon } from "./reacticon";
 
 export const HoverEffect = ({
   items,
@@ -64,7 +65,7 @@ export const HoverEffect = ({
                   <NextIcon />
                   <TailwildIcon />
                   <TypescriptIcon />
-                  {/* <ReactIcon /> */}
+                  <ReactIcon />
                 </div>
 
                 <div className=" flex gap-3 items-center pb-4">
