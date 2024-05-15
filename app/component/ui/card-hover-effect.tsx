@@ -64,8 +64,8 @@ export const HoverEffect = ({
                 <div className=" flex gap-5 pb-8">
                   <NextIcon />
                   <TailwildIcon />
-                  <TsIcon />
-                  {/* <ReactIcon /> */}
+                  {/* <TsIcon />
+                  <ReactIcon /> */}
                 </div>
 
                 <div className=" flex gap-3 items-center pb-4">
