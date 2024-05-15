@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 import { Codeicon } from "./codeicon";
+import { NextIcon } from "./nexticon";
 
 export const HoverEffect = ({
   items,
@@ -57,12 +58,12 @@ export const HoverEffect = ({
                 <img src={item.image} alt="" />
                 <p className="text-white font-semibold py-8">{item.title}</p>
                 <p className="text-[#a1a1aa] pb-8">{item.description}</p>
-                {/* <div className=" flex gap-5 pb-8">
+                <div className=" flex gap-5 pb-8">
                   <NextIcon />
-                  <TailwildIcon />
+                  {/* <TailwildIcon />
                   <TsIcon />
-                  <ReactIcon />
-                </div> */}
+                  <ReactIcon /> */}
+                </div>
 
                 <div className=" flex gap-3 items-center pb-4">
                   <Codeicon />
