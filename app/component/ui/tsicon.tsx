@@ -1,6 +1,6 @@
 "user client";
 import React from "react";
-export const TsIcon = (props: any) => (
+export const TypescriptIcon = (props: any) => (
   <div className=" text-[#6b7280]">
     <svg
       stroke="currentColor"
