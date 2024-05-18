@@ -2,10 +2,10 @@
 import { HoverEffect } from "../ui/card-hover-effect";
 import { OpenSource } from "./open-source";
 
-export function SocialMediaIcon() {
+export function SocialMediaIcon2() {
   return (
     <div className="">
-      <div className=" flex md:justify-center items-center gap-7 mx-3">
+      <div className=" flex justify-center items-center gap-7 mx-3">
         <svg
           className=" w-6"
           xmlns="http://www.w3.org/2000/svg"

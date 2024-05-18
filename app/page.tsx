@@ -8,15 +8,18 @@ import { CardHoverEffectDemo2 } from "./component/ui/open-source-main";
 import { SocialMediaIcon } from "./component/ui/socialmedia-icon";
 import Link from "next/link";
 import { Navbar } from "./component/ui/navbar";
+import { MdSmNavbar } from "./component/ui/md-nav";
+import MdTapcomponent from "./component/ui/md-tap";
 
 export default function Home() {
   return (
-    <div className="">
-      <div className="mx-60 py-10">
+    <div className=" bg-[#18181b] text-white">
+      <div className="lg:mx-60 md:mx-10 mx-5 py-10">
         <Navbar />
+        <MdSmNavbar />
         <div className=" mt-32">
-          <h1 className=" text-5xl font-semibold">
-            I'm a software engineer that <br /> rarely{" "}
+          <h1 className=" md:text-5xl text-3xl font-semibold ">
+            I'm a software engineer that rarely{" "}
             <span className=" text-[#06b6d4]">writes code.</span>
           </h1>
           <p className=" text-[#a1a1aa]  my-10">
@@ -38,30 +41,33 @@ export default function Home() {
           </p>
         </div>
         <div className=" mt-32 mb-10">
-          <h1 className="text-3xl font-semibold">Work Experience</h1>
+          <h1 className="md:text-3xl text-2xl font-semibold">
+            Work Experience
+          </h1>
           <p className="text-[#a1a1aa] mt-5 ">
             I switch a lot of companies. It's mostly about the culture.
           </p>
         </div>
       </div>
-      <div className="max-w-3xl mx-auto border-l border-l-[#27272a] pl-8">
+      <div className="max-w-3xl mx-auto sm:border-l border-l-[#27272a] pl-8 flex-col">
         <Tapcomponent />
+        <MdTapcomponent />
       </div>
-      <div className="mx-60 mt-36">
-        <p className="text-3xl font-semibold">
+      <div className="lg:mx-60 lg:mt-36 mx-5 mt-20">
+        <p className="md:text-3xl text-2xl font-semibold">
           I've been building a lot of things
         </p>
         <CardHoverEffectDemo />
       </div>
-      <div className="mx-60 mt-36">
-        <p className="text-3xl font-semibold">
+      <div className="lg:mx-60 lg:mt-36 mx-5">
+        <p className="md:text-3xl text-2xl font-semibold">
           Latest contributions to open source
         </p>
         <CardHoverEffectDemo2 />
       </div>
-      <div className="mx-56 flex gap-6 mt-20">
+      <div className="lg:mx-56 md:flex gap-6 mt-20 mx-5">
         <div className="">
-          <div className="  hover:bg-[#27272a] p-10 rounded-2xl">
+          <div className="  hover:bg-[#27272a] md:p-10 p-5 rounded-2xl">
             <a href="#" className=" ">
               <p className="text-[#a1a1aa] text-xs border-l border-l-[#3f3f46] py-1 px-4">
                 November 28, 2022
@@ -76,7 +82,7 @@ export default function Home() {
               <p className="text-[#06b6d4] text-sm pt-5">Read More</p>
             </a>
           </div>
-          <div className=" hover:bg-[#27272a] p-10 rounded-2xl">
+          <div className=" hover:bg-[#27272a] md:p-10 p-5 rounded-2xl">
             <a href="#" className=" ">
               <p className="text-[#a1a1aa] text-xs border-l border-l-[#3f3f46] py-1 px-4">
                 November 28, 2022
@@ -92,7 +98,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="">
+        <div className="mt-6">
           <div className="">
             <p className="font-bold">Uses</p>
             <p className="font-bold mt-5 mb-2">16 Inch M2 MacBook Pro</p>
@@ -124,8 +130,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer className=" pb-24">
-        <a href="#" className="">
+      <footer className=" py-24 ">
+        <a href="/" className="">
           <div className=" flex items-center justify-center gap-3">
             <img
               className="rounded-full w-8"
@@ -136,14 +142,14 @@ export default function Home() {
             <h1 className=" text-lg font-bold">Hein Thiha</h1>
           </div>{" "}
         </a>
-        <div className=" flex gap-5 text-sm justify-center my-6">
-          <a href="#">About</a>
+        <div className=" flex gap-5 text-sm justify-center text-[#a1a1aa] my-6">
+          <a href="/hein">About</a>
           <a href="#">Projects</a>
           <a href="#">Contributions</a>
           <a href="#">Blogs</a>
           <a href="#">Events</a>
         </div>
-        <p className="text-sm border-t border-t-[#27272a] max-w-96 mx-auto text-center py-4">
+        <p className="text-sm text-[#a1a1aa] border-t border-t-[#27272a] max-w-96 mx-auto text-center py-4">
           © 2024 Devpro Portfolio Template. All rights reserved.
         </p>
         <SocialMediaIcon />

@@ -6,11 +6,11 @@ import { GoogleIcon } from "./googleicon";
 import { MicrosoftIcon } from "./microsofticon";
 import { NetflixIcon } from "./netflixIcon";
 
-export default function Tapcomponent() {
-  const [isVertical, setIsVertical] = React.useState(true);
+export default function MdTapcomponent() {
+  const [isVertical, setIsVertical] = React.useState(false);
   return (
-    <div className="hidden lg:flex md:flex">
-      <div className="">
+    <div className="flex md:hidden lg:hidden ">
+      <div className=" w-80">
         <Tabs
           className=""
           aria-label="Options"
@@ -18,23 +18,22 @@ export default function Tapcomponent() {
           classNames={{
             tabList: "bg-[#18181b]",
             cursor: "w-full !bg-[#323236]",
-            tab: "max-w-fit px-0 h-12 hover:bg-[#27272a]",
+            tab: "max-w-fit h-10 hover:bg-[#27272a]",
             tabContent: "group-data-[selected=true]:text-[]",
           }}
         >
           <Tab
             key="apple"
-            className=""
+            className="rounded-xl overflow-hidden"
             title={
-              <div className="flex items-center justify-start space-x-2 text-left px-6">
+              <div className="flex items-center justify-start gap-1 text-left px-3">
                 <AppleIcon />
-                <span className=" text-[#a1a1aa] ">Apple</span>
               </div>
             }
           >
             <div className=" text-[#a1a1aa] space-y-2">
-              <h1 className="text-2xl font-semibold text-white">
-                Senior Software Engineer{" "}
+              <h1 className="text-xl font-semibold text-white ">
+                Senior Software Engineer <br />
                 <span className="text-[#06b6d4]">@ Apple</span>
               </h1>
               <div className="text-sm space-y-2 ">
@@ -92,17 +91,16 @@ export default function Tapcomponent() {
           </Tab>
           <Tab
             key="google"
-            className=""
+            className="rounded-xl overflow-hidden"
             title={
-              <div className="flex items-center justify-center space-x-2 px-5">
+              <div className="flex items-center justify-center space-x-2 px-3">
                 <GoogleIcon />
-                <span className=" text-[#a1a1aa]">Google</span>
               </div>
             }
           >
             <div className=" text-[#a1a1aa] space-y-2">
-              <h1 className="text-2xl font-semibold text-white">
-                Senior Software Engineer{" "}
+              <h1 className="text-xl font-semibold text-white">
+                Senior Software Engineer <br />
                 <span className="text-[#06b6d4]">@ Google</span>
               </h1>
               <div className="text-sm space-y-2">
@@ -160,18 +158,17 @@ export default function Tapcomponent() {
           </Tab>
           <Tab
             key="microsoft"
-            className=""
+            className="rounded-xl overflow-hidden"
             title={
               <div className="flex items-center justify-center space-x-2 px-3">
                 <MicrosoftIcon />
-                <span className=" text-[#a1a1aa]">Microsoft</span>
               </div>
             }
           >
             <div className=" text-[#a1a1aa] space-y-2">
-              <h1 className="text-2xl font-semibold text-white">
-                Senior Software Engineer{" "}
-                <span className="text-[#06b6d4]">@ Google</span>
+              <h1 className="text-xl font-semibold text-white">
+                Senior Software Engineer <br />
+                <span className="text-[#06b6d4]">@ Microsoft</span>
               </h1>
               <div className="text-sm space-y-2">
                 <p className="py-2">Jan 2021 - Jun 2021</p>
@@ -228,17 +225,16 @@ export default function Tapcomponent() {
           </Tab>
           <Tab
             key="netflix"
-            className=""
+            className="rounded-xl overflow-hidden"
             title={
-              <div className="flex items-center justify-center space-x-2 px-6">
+              <div className="flex items-center justify-center space-x-1 px-3">
                 <NetflixIcon />
-                <span className=" text-[#a1a1aa]">Netflix</span>
               </div>
             }
           >
             <div className=" text-[#a1a1aa] space-y-2">
-              <h1 className="text-2xl font-semibold text-white">
-                Software Engineer Intern
+              <h1 className="text-xl font-semibold text-white">
+                Software Engineer Intern <br />
                 <span className="text-[#06b6d4]"> @ Netflix</span>
               </h1>
               <div className="text-sm space-y-2">
