@@ -10,6 +10,7 @@ import Link from "next/link";
 import { Navbar } from "./component/ui/navbar";
 import { MdSmNavbar } from "./component/ui/md-nav";
 import MdTapcomponent from "./component/ui/md-tap";
+import { SocialMediaIcon2 } from "./component/ui/socialmedia-icon-2";
 
 export default function Home() {
   return (
@@ -152,7 +153,7 @@ export default function Home() {
         <p className="text-sm text-[#a1a1aa] border-t border-t-[#27272a] max-w-96 mx-auto text-center py-4">
           © 2024 Devpro Portfolio Template. All rights reserved.
         </p>
-        <SocialMediaIcon />
+        <SocialMediaIcon2 />
       </footer>
     </div>
   );
