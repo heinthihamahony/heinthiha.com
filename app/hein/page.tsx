@@ -21,7 +21,7 @@ export default function About() {
         <MdSmNavbar />
         <Navbar />
 
-        <div className=" mt-32 mx-5">
+        <div className=" mt-24 mx-5">
           <Abouthero />
           <Abouthero2 />
 

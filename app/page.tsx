@@ -18,7 +18,7 @@ export default function Home() {
       <div className="lg:mx-60 md:mx-10 mx-5 py-10">
         <Navbar />
         <MdSmNavbar />
-        <div className=" mt-32">
+        <div className=" mt-24">
           <h1 className=" md:text-5xl text-3xl font-semibold ">
             I'm a software engineer that rarely{" "}
             <span className=" text-[#06b6d4]">writes code.</span>

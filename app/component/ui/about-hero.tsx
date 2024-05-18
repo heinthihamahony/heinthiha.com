@@ -8,7 +8,7 @@ export function Abouthero() {
       <div className="">
         <h1 className=" text-5xl font-semibold">
           Hey! I'm <span className="text-[#06b6d4]">Hein Thiha</span> and I'm a
-          full stack soap engineer.
+          Front-end Developer.
         </h1>
         <p className=" text-[#a1a1aa]  my-10 ">
           I've been obsessed with technology ever since I was a kid. When I

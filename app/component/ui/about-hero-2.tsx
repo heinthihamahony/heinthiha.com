@@ -16,7 +16,7 @@ export function Abouthero2() {
       <div className=" mt-10">
         <h1 className=" md:text-5xl text-3xl font-semibold">
           Hey! I'm <span className="text-[#06b6d4]">Hein Thiha</span> and I'm a
-          full stack soap engineer.
+          Front-end Developer.
         </h1>
         <p className=" text-[#a1a1aa]  my-10 ">
           I've been obsessed with technology ever since I was a kid. When I
